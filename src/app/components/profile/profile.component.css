@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Montserrat:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+
+html, body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    display: table;
+}
+
+.ficha-titulo, .ficha-education{
+    background-color: rgb(201, 235, 196);
+}
+
+.titulo{
+    padding: 0px 50px;
+    font-family: 'Cinzel', serif;
+}
+
+.barra-derecha{
+    background-color: #b3bbbb;
+}
+
+.barra-negra{
+    display: inline-block;
+    width: 90%;
+    height: 5px;    
+    background-color: #000000;
+}
+
+.subtitulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.ficha-education, .contact-info h3, .volunteering-experience h3{
+    font-family: 'Cinzel', serif;   
+}
+
+.ficha-education h3{
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+.contenedor-photo{
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    border-radius: 100%;
+    background-color: blueviolet;
+    background-image: url('^assets/img/hdv2.jpg');
+    background-size: cover;
+    background-position-x: -80px;
+    background-position-y: 0px;
+    
+}
+
+.fichas-skills, .ficha-work{
+    border: 1px solid #b6b6b6;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.titulos-trabajos{
+    font-weight: 600;
+    color: #646464;
+}
+
+.contact-info, .volunteering-experience{
+    width: 90%;
+    margin-top: 120px ;
+    
+}
+
+.contact-info h3, .volunteering-experience h3{
+    margin-top: 1rem;
+}
+
+.datos-contact-info{
+    width: 90%;
+    margin-top: 20px;
+}
+
+.lista-datos-contact-info, .lista-datos-volunteering{
+    margin-top: 16px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.lista-datos-contact-info{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.titulos-volunteering{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+.lupa{
+    color: #646464;
+    font-size: 25px;
+}
+
+.lupa:hover{
+    color:rgb(201, 235, 196);
+    cursor: pointer;
+    font-size: 30px;
+    overflow: visible;
+}

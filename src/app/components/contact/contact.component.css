@@ -1,0 +1,12 @@
+textarea {
+    resize: none;
+}
+
+.form-label, .form-control, .span-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-label{
+    font-weight: bold;
+}
+

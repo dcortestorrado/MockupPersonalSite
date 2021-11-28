@@ -1,0 +1,52 @@
+.ficha-principal{
+    background-color: #ebebeb;
+    height: 400px;
+    box-shadow: transparent;
+    -webkit-box-shadow: transparent;
+    border: transparent 10px solid;
+    border-radius: 20px;
+    outline: transparent 5px solid;
+    transition: all 1 ease-in;
+}
+
+.ficha-principal:hover{    
+    border: solid 10px #fff;
+    outline: solid 5px rgba(81, 82, 81, 0.486);
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.html-logo, .css-logo, .bs-logo{
+    width: 48px;
+    height: 48px;
+}
+
+.angular-logo{
+    width: 48px;
+    height: 40px;
+}
+
+.js-logo{
+    height: 40px;
+    width: 48px;
+}
+.mongo-logo{
+    height: 40px;
+    width: 100px;
+}
+.node-logo{
+    height: 70px;
+    
+}
+
+img{
+    margin-right: 15px;
+}
+
+h1, div p{
+    font-family: 'Outfit', sans-serif;
+}
+
+div p{
+    font-size: 23px;
+}

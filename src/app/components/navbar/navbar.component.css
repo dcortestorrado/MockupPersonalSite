@@ -1,0 +1,46 @@
+.dc-nav{
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-brand, .navbar-nav, .navbar-nav button{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.btn{
+    background-color: #2e744c;
+    color: #ffffff !important;
+    padding: 5px;
+}
+
+.nav-item{
+    background-color: transparent;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+}
+
+.nav-item span{
+    display: inline-block;
+}
+
+.nav-item:hover{
+    background-color: #c8e8c0;
+}
+
+.navbar-nav button{
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    transition: all 0.2s;
+}
+
+.navbar-nav button:hover{
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 13px 17px 8px -6px #C2C2C2; 
+    box-shadow: 0px 10px 13px -7px #000000, 13px 17px 8px -6px #C2C2C2;
+
+}
+
+a {
+    text-decoration: none;
+}

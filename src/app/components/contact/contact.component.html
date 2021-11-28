@@ -1,0 +1,40 @@
+<!--<input formControlName="nombreContacto">, etc...
+    las opciones son las guardadas en el app.module.ts-->
+
+<div class="row d-flex justify-content-center align-items-center">
+
+    <div class="col-3">
+
+        <form [formGroup]="contactoForm" (ngSubmit)="guardarMensaje()">
+
+            <div class="mb-4">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" formControlName="nombreContacto">
+                <span class="text-danger fw-bold span-font" *ngIf="contactoForm.get('nombreContacto')?.hasError('required') && contactoForm.get('nombreContacto')?.touched">Please leave your name here.</span> 
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label">Email address</label>
+                <input type="email" class="form-control" formControlName="correoContacto">
+                <span class="text-danger fw-bold span-font" *ngIf="contactoForm.get('correoContacto')?.hasError('required') && contactoForm.get('correoContacto')?.touched">Please leave your email address.</span>               
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label">Phone number</label>
+                <input type="email" class="form-control" formControlName="telefonoContacto" aria-describedby="PhoneHelp">
+                <div id="emailHelp" class="form-text">This is optional.</div>
+                <span class="text-danger fw-bold span-font" *ngIf="contactoForm.get('telefonoContacto')?.hasError('pattern')">Leave a valid number.</span> 
+            </div>
+            
+            <div class="mb-4">
+                <label class="form-label">Message:</label>
+                <textarea rows='10' class="form-control" formControlName="mensajeContacto"></textarea>
+                <span class="text-danger fw-bold span-font" *ngIf="contactoForm.get('mensajeContacto')?.hasError('required') && contactoForm.get('mensajeContacto')?.touched">Please leave your message.</span>               
+            </div>
+
+            <button type="submit" class="btn btn-primary span-font">Submit</button>
+
+        </form>       
+    </div>
+
+</div>
