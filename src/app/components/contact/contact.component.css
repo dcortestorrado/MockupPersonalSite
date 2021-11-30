@@ -10,3 +10,8 @@ textarea {
     font-weight: bold;
 }
 
+span {
+    display: block;
+    position: absolute;
+}
+

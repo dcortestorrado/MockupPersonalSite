@@ -21,8 +21,8 @@
 
             <div class="mb-4">
                 <label class="form-label">Phone number</label>
-                <input type="email" class="form-control" formControlName="telefonoContacto" aria-describedby="PhoneHelp">
-                <div id="emailHelp" class="form-text">This is optional.</div>
+                <input type="number" class="form-control" formControlName="telefonoContacto" aria-describedby="PhoneHelp">
+                <div id="PhoneHelp" class="form-text">This is optional.</div>
                 <span class="text-danger fw-bold span-font" *ngIf="contactoForm.get('telefonoContacto')?.hasError('pattern')">Leave a valid number.</span> 
             </div>
             
@@ -32,7 +32,7 @@
                 <span class="text-danger fw-bold span-font" *ngIf="contactoForm.get('mensajeContacto')?.hasError('required') && contactoForm.get('mensajeContacto')?.touched">Please leave your message.</span>               
             </div>
 
-            <button type="submit" class="btn btn-primary span-font">Submit</button>
+            <button type="submit" class="btn btn-primary span-font" [disabled]="contactoForm.invalid">Send Message</button>
 
         </form>       
     </div>
